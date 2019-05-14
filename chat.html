@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Registro</title>
+
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <style>
+            body {
+              margin: 0 auto;
+              max-width: 800px;
+              padding: 0 20px;
+            }
+            
+            .container {
+              border: 2px solid #ccc;
+              background-color: #fff;
+              border-radius: 5px;
+              padding: 10px;
+              margin: 10px 0;
+            }
+            
+            .darker {
+              border-color: #0099ff;
+              background-color: #0099ff;
+            }
+            
+            .container::after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+            
+            .container img {
+              float: left;
+              max-width: 60px;
+              width: 100%;
+              margin-right: 20px;
+              border-radius: 50%;
+            }
+            
+            .container img.right {
+              float: right;
+              margin-left: 20px;
+              margin-right:0;
+            }
+            
+            .time-right {
+              float: right;
+              color: #aaa;
+            }
+            
+            .time-left {
+              float: left;
+              color: #ddd;
+            }
+
+            .other-text {
+                color: #fff;
+            }
+
+            .container .text{
+                resize: none;
+                outline: none;
+                width: 100%;
+                padding: 10px;
+                border: none;
+                height: 100%;
+                margin: -10px;
+            }
+            </style>
+
+</head>
+
+<body>
+    <div class="container" style="overflow-y: scroll; height:400px;">
+        <div class="container">
+            <h4 class="right">Tu</h2>
+            <p>Hello. How are you today?</p>
+            <span class="time-right">11:00</span>
+        </div>
+        
+        <div class="container darker">
+            <h4 class="left other-text">Vidrios Tony</h2>
+            <p class="other-text">Hey! I'm fine. Thanks for asking!</p>
+            <span class="time-left">11:01</span>
+        </div>
+        
+        <div class="container">
+            <h4 class="right">Tu</h2>
+            <p>Sweet! So, what do you wanna do today?</p>
+            <span class="time-right">11:02</span>
+        </div>
+        
+        <div class="container darker">
+            <h4 class="left other-text">Vidrios Tony</h2>
+            <p class="other-text">Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+            <span class="time-left">11:05</span>
+        </div>
+    </div>
+    <div class="container">
+        <textarea class="text"></textarea>
+    </div>
+
+    <button type="button" class="btn btn-primary">Enviar</button>
+    
+</body>
