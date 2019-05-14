@@ -17,36 +17,15 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <a class="navbar-brand" href="#">Handy Neighbor</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="navbar-nav">
-
-                <li class="active"><a class="nav-link" href="#">Nuevo servicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Servicios solicitados</a></li>
-            </ul>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="icon-user m-auto"></i>
-                        Usuario
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <div id="header"></div>
 
     <div class="container">
         <div class="row">
             <h2>Buscar</h2>
         </div>
         <div class="row form-group">
-            <input type="text" class="form-control col-11 col-sm-11" id="searchterm">
-            <button type="button" class="btn btn-primary col-1">
+            <input type="text" class="form-control col" id="searchterm">
+            <button type="button" class="btn btn-primary">
                 <i class="icon-magnifier m-auto"></i>
             </button>
         </div>
@@ -115,5 +94,14 @@
 
     </div>
 
+    <script src="vendor/jquery/jquery-3.4.0.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+        })
+    </script>
 </body>
 </html>
