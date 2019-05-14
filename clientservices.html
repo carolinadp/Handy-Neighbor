@@ -19,32 +19,44 @@
 
 <div id="header"></div>
 
-<div class="container">
-    <h1>Tus solicitudes</h1>
 
+
+<div class="container">
+    <h1>Tus servicios</h1>
     <table id="services-table" class="table">
         <thead>
         <tr>
             <th>Proveedor</th>
-            <th>Fecha ultimo mensaje</th>
-            <th>Ir a la conversación</th>
+            <th>Fecha de contratación</th>
+            <th>Estatus</th>
+            <th>Acciones</th>
         </tr>
         </thead>
         <tbody>
         <tr>
             <td>Carpintería Ramirez</td>
             <td>13 de Mayo de 2019</td>
-            <td><button class="btn btn-primary">Chat</button></td>
+            <td class="text-primary">ACEPTADO</td>
+            <td>
+                <button class="btn btn-danger">Cancelar</button>
+                <button class="btn btn-primary">Evaluar</button>
+            </td>
         </tr>
         <tr>
             <td>Plomero Juan Perez</td>
             <td>7 de Mayo de 2019</td>
-            <td><button class="btn btn-primary">Chat</button></td>
+            <td class="text-success">FINALIZADO</td>
+            <td>
+                <button class="btn btn-primary">Evaluar</button>
+            </td>
         </tr>
         <tr>
             <td>Vidrios Ulises</td>
             <td>9 de Mayo de 2019</td>
-            <td><button class="btn btn-primary">Chat</button></td>
+            <td class="text-danger">CANCELADO</td>
+            <td>
+                <button class="btn btn-primary">Evaluar</button>
+            </td>
         </tr>
         </tbody>
     </table>
