@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Registro</title>
+
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+<div id="header"></div>
+
+<div class="container">
+    <div class="row" style="display: inline-block; border: solid 1px #808080; padding: 15px">
+        <div class="col-md-6">
+            <img class="img-fluid" alt="eCommerce Detail" src="https://www.prepbootstrap.com/Content/images/template/productslider/product_004.jpg" />
+            <br />
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <img class="img-fluid" alt="eCommerce Detail" src="https://www.prepbootstrap.com/Content/images/template/productslider/product_005.jpg" />
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <img class="img-fluid" alt="eCommerce Detail" src="https://www.prepbootstrap.com/Content/images/template/productslider/product_005.jpg" />
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <img class="img-fluid" alt="eCommerce Detail" src="https://www.prepbootstrap.com/Content/images/template/productslider/product_005.jpg" />
+                </div>
+                <div class="col-md-3 col-sm-3 col-6">
+                    <img class="img-fluid" alt="eCommerce Detail" src="https://www.prepbootstrap.com/Content/images/template/productslider/product_005.jpg" />
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h2>iPad</h2>
+            <p>
+            <div id="rating1"></div>
+            (10 reviews)
+            </p>
+            <br />
+            <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <br>
+            <h4 class="text-xs-right">Current price: <span style="color: #197BB5; font-size: 35px;">$950.00</span></h4>
+            <p class="text-xs-right"><strong>89%</strong> of buyers enjoyed this product! <strong>(107 votes)</strong></p>
+            <br />
+            <h4>Sizes:
+                <span style="color: #197BB5">S</span>
+                <span style="color: #197BB5">M</span>
+                <span style="color: #197BB5">L</span>
+                <span style="color: #197BB5">XL</span>
+            </h4>
+            <h4 class="colors">Colors:
+                <span class="color black"></span>
+                <span class="color gray"></span>
+                <span class="color gold"></span>
+            </h4>
+            <br />
+            <br />
+            <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add To Card</button>
+            <button type="button" class="btn btn-primary"><i class="fa fa-heart"></i></button>
+        </div>
+    </div>
+</div>
+
+<!-- you need to include the shieldui css and js assets in order for the charts to work -->
+<link rel="stylesheet" type="text/css" href="https://www.shieldui.com/shared/components/latest/css/light/all.min.css" />
+<script type="text/javascript" src="https://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
+
+<script type="text/javascript">
+    jQuery(function ($) {
+        $('#rating1').shieldRating({
+            max: 5,
+            step: 1,
+            value: 3,
+            markPreset: false
+        });
+    });
+</script>
+
+<style>
+    .btn
+    {
+        border-radius: 0;
+    }
+
+    .colors
+    {
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+    }
+
+    .color
+    {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        height: 2em;
+        width: 2em;
+        border-radius: 0;
+    }
+
+    .color:first-of-type
+    {
+        margin-left: 20px;
+    }
+
+    .black
+    {
+        background: #000000;
+    }
+
+    .gray
+    {
+        background: #808080;
+    }
+
+    .gold
+    {
+        background: #D3AF37;
+    }
+</style>
+
+
+<script src="vendor/jquery/jquery-3.4.0.min.js"></script>
+<script src="vendor/popper/popper.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<script>
+    $(function(){
+        $("#header").load("providerheader.html");
+    })
+</script>
+</body>
+</html>
