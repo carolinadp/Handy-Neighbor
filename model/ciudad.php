@@ -12,7 +12,7 @@
 
     function selectCiudades(){
         $result = cargarCiudades();
-        $ans = "<select class='form-control' id='ciudad' name='ciudad'>";
+        $ans = "<label for=\"ciudad\">Ciudad</label><select class='form-control' id='ciudad' name='ciudad'>";
         foreach ($result as $row ){
             $nombre = $row["nombre"];
             $id = $row["id"];

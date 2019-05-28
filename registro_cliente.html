@@ -24,15 +24,16 @@
     <div class="container">
         <div class="col">
             <h1>Registrate como cliente</h1>
-            <form>
+                <div class="warning hidden" id="error-general"></div>
                 <div class="form-group">
-                <label for="nombre">Nombre</label>
-                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
+                    <div class="warning hidden" id="error-nombre">El nombre sólo puede contener letras o espacios.</div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
                 </div>
 
                 <div class="form-group" id="ciudades-div">
-                <!--label for="ciudad">Ciudad</--label>
-                <--select class="form-control" name="ciudad" id="ciudad">
+
+                <!--select class="form-control" name="ciudad" id="ciudad">
                     <option>Aguascalientes</option>
                     <option>Guadalajara</option>
                     <option>León</option>
@@ -40,29 +41,41 @@
                 </div>
 
                 <div class="form-group">
-                <label for="correo">Correo electrónico</label>
-                <input type="email" class="form-control" name="correo" id="correo" placeholder="Correo electrónico">
+                    <div class="warning hidden" id="error-correo">El correo electrónico no es válido.</div>
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" class="form-control" name="correo" id="correo" placeholder="Correo electrónico">
                 </div>
 
                 <div class="form-group">
-                <label for="contrasena">Contraseña</label>
+                    <div class="warning hidden" id="error-contrasena">La contraseña debe contener entre 6 y 20
+                        caracteres y contener sólo letras, números, espacios, puntos y comas.</div>
+                    <label for="contrasena">Contraseña</label>
                 <input type="password" class="form-control" name="contrasena" id="contrasena" placeholder="Contraseña">
                 </div>
 
                 <div class="form-group">
-                <label for="telefono">Teléfono</label>
+                    <div class="warning hidden" id="error-confirmar">Las contraseñas no coinciden.</div>
+                    <label for="confirmar-contrasena">Confirmar contraseña</label>
+                <input type="password" class="form-control" name="confirmar-contrasena" id="confirmar-contrasena" placeholder="Confirmar contraseña">
+                </div>
+
+                <div class="form-group">
+                    <div class="warning hidden" id="error-telefono">Favor de escribir un número de teléfono de 10
+                        dígitos.</div>
+                    <label for="telefono">Teléfono</label>
                 <input type="text" class="form-control" name="telefono" id="telefono" aria-describedby="helpId" placeholder="Telefono">
                 </div>
 
                 <div class="form-check">
-                  <label class="form-check-label">
+                    <div class="warning hidden" id="error-terminos">Es requerido aceptar los términos y
+                        condiciones para usar el servicio.</div>
+                    <label class="form-check-label">
                     <input type="checkbox" class="form-check-input" name="" id="terminos" value="checkedValue" checked>
                     <a href="terminos.html">Acepto los términos y condiciones</a>
                   </label>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
+                <button type="submit" class="btn btn-primary" id="btn-enviar">Enviar</button>
         </div>
     </div>
 

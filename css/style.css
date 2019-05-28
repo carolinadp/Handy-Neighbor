@@ -7,3 +7,11 @@ footer.footer {
 .checked {
     color: orange;
 }
+
+.hidden {
+    visibility: hidden;
+}
+
+.warning {
+    color: red;
+}
